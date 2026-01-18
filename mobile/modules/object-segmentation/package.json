@@ -1,0 +1,13 @@
+{
+  "name": "object-segmentation",
+  "version": "1.0.0",
+  "description": "Object segmentation module for Object Organizer.",
+  "license": "MIT",
+  "author": "Object Organizer",
+  "homepage": "https://example.com",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "expo": {
+    "modules": "expo-module.config.json"
+  }
+}

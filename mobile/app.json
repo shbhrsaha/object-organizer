@@ -1,15 +1,21 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "Object Organizer",
+    "slug": "object-organizer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "mobile",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.saha.objectorganizer",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Object Organizer to take photos for cutouts.",
+        "NSPhotoLibraryAddUsageDescription": "Allow Object Organizer to save cutout objects to your Photos library.",
+        "NSPhotoLibraryUsageDescription": "Allow Object Organizer to access your Photos library."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -27,16 +33,15 @@
     },
     "plugins": [
       "expo-router",
+      "expo-camera",
+      "expo-media-library",
       [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
+          "backgroundColor": "#ffffff"
         }
       ]
     ],
